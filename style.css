@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  @font-face {
+    font-family:'Noto Sans' ;
+    src: url(./assets/fonts/static/NotoSans-Bold.ttf ) format('truetype');
+    font-style: bold;
+  }
+
+  @font-face {
+    font-family:'Noto Sans' ;
+    src: url(./assets/fonts/static/NotoSans-Medium.ttf ) format('truetype');
+    font-style: Medium;
+  }
+
+  @font-face {
+    font-family:'Noto Sans' ;
+    src: url(./assets/fonts/static/NotoSans-Regular.ttf )format('truetype');
+    font-style: normal;
+  }
+
+  body{
+    background: linear-gradient(180deg, #040918 0%, #091540 100%);
+    font-family: 'Noto Sans', sans-serif;
+    color: #fff;
+   
+  }
+
+  body[data-theme = "light"] {
+    background: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
+     font-family: 'Noto Sans', sans-serif;
+  }
+
+   [data-theme="light"] .extensions-list h2 {
+    color: #0B143E;
+ 
+     
+  }
+
+  body[data-theme="light"] .extent-items {
+  background: #fcfdff;
+  color: #0B143E
+}
+
+  body[data-theme="light"] .remove-button {
+    border: 3px solid #EBECED;
+    background:  #fcfdff;
+    color: #0B143E;
+  } 
+
+  body[data-theme="light"] .remove-button:hover{
+ border: 3px solid hsl(3, 86%, 64%);
+  }
+
+  body[data-theme="light"] .extensions-button{
+     background:  #fcfdff;
+     
+  }
+
+   body[data-theme="light"] .extensions-button2{
+     background:  hsl(0, 0%, 93%);
+     
+  }
+
+  
+   #my-logo .logo {
+  fill: #fff; /* red by default (light mode) */
+}
+
+ body[data-theme="light"]  #my-logo .logo{
+     fill: #0B143E;
+     
+  }
+body[data-theme="light"] .exten-list {
+  background: #fcfdff;
+  color :  #0B143E;
+}
+
+
+  .container {
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 1rem;
+
+  }
+
+  .extensions-button{
+    width : 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    background: hsl(226, 25%, 17%);
+    border: none;
+    margin-bottom: 40px;
+  }
+
+  .extensions-button2{
+    background: hsl(225, 23%, 24%) ;
+    margin-top: 3px;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .extensions-list {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+     margin-bottom: 20px;
+
+  }
+
+  .exten-list {
+    padding: 10px;
+    border: none;
+    color: white;
+    background: hsl(225, 23%, 24%);
+    border-radius: 50px;
+    cursor: pointer;
+   
+  }
+
+ .big{
+  width: 50px;
+ }
+
+ .big:hover {
+  border: 3px solid hsl(3, 77%, 44%);
+ }
+
+ .bigger {
+  width: 70px;
+ }
+
+ .biggest {
+  width: 100px;
+ }
+
+ .buttons3 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+ }
+
+ 
+
+ .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 320px);
+
+ 
+  gap: 20px;
+  
+  
+ }
+
+ .extent-items{
+  background: hsl(226, 25%, 17%); 
+  border-radius: 10px;
+  border: 0.1px solid rgba(255, 255, 255, 0.1);
+   box-sizing: border-box;
+    display: flex;
+  flex-direction: column;
+   height: 100%;
+    box-sizing: border-box;
+   
+ }
+
+ .top {
+  flex-grow: 1;
+ }
+
+ .ex {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+ }
+
+ .ex2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  margin-top: 16px;
+ }
+
+ .remove-button {
+  width: 80px;
+  height: 30px;
+  border-radius: 50px;
+  background: hsl(226, 25%, 17%);
+  color: white;
+  border: 0.1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+ }
+
+ 
+
+
+ /* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  
+}
+
+/* Hide default checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: hsl(225, 23%, 24%);
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+/* The circle inside the slider */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+
+
+/* Move the circle to the right */
+.switch input:checked + .slider:before {
+  transform: translateX(20px);
+}
+  
+ 
+/* When checked */
+.switch input:checked + .slider {
+  background-color: hsl(3, 86%, 64%);
+}
+
+.hidden {
+  display: none !important
+}
+
+ 
