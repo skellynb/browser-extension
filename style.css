@@ -153,11 +153,9 @@ body[data-theme="light"] .exten-list {
 
  .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 320px);
-
- 
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
   gap: 20px;
-  
+  width: 100%; 
   
  }
 
@@ -260,4 +258,29 @@ body[data-theme="light"] .exten-list {
   display: none !important
 }
 
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding : 10px;
+}
+
+@media (max-width: 600px) {
+  
+   .extensions-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; 
+    text-align: center;
+  }
+
+  .buttons3 {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+
+  
+  
+}
  

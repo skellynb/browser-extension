@@ -37,7 +37,7 @@ fetch ('data.json')
      <div>
      <img src = "${item.logo}" alt="${item.name} logo" width = "40" height = "40" />
      </div>
-     <div class"item">
+     <div class = "item">
      <h3>${item.name}</h3>
      <p>${item.description}</p>
      </div>
